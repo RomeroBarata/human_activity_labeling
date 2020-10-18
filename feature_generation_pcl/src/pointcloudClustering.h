@@ -29,6 +29,13 @@ Copyright (C) 2012 Hema Koppula
 #include "includes/CombineUtils.h"
 #include "includes/CovarianceMatrix.h"
 
+// My modifications
+#include "pcl/impl/pcl_base.hpp"
+#include "pcl/kdtree/impl/kdtree_flann.hpp"
+#include "pcl/search/impl/kdtree.hpp"
+#include "pcl/search/impl/organized.hpp"
+#include "pcl/features/impl/normal_3d.hpp"
+
 typedef pcl::PointXYZRGB PointT;
 typedef pcl::PointXYZRGBCamSL PointOutT;
 

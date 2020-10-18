@@ -91,7 +91,7 @@ void ObjectProfile::initialize() {
       }
     }
   }
-  assert(minEigV == getDescendingLambda(2));
+  //assert(minEigV == getDescendingLambda(2));
 }
 
 void ObjectProfile::setObjectType(string type) {
@@ -176,8 +176,8 @@ void ObjectProfile::filterCloud(map<int, int> &tablePoints) {
 void ObjectProfile::setEigValues(Eigen::Vector3d eigenValues_) {
   eigenValues.clear();
   // Assuming the values are sorted
-  assert(eigenValues_(0) <= eigenValues_(1));
-  assert(eigenValues_(1) <= eigenValues_(2));
+  //assert(eigenValues_(0) <= eigenValues_(1));
+  //assert(eigenValues_(1) <= eigenValues_(2));
 
   for (int i = 0; i < 3; i++)
     eigenValues.push_back(eigenValues_(i));
