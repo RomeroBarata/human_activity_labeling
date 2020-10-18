@@ -8,8 +8,8 @@ CWD=$(pwd)
 
 cd scripts
 rm -f nohup.out
-nohup matlab -nodesktop -nosplash -r binfeats
-
+#nohup matlab -nodesktop -nosplash -r binfeats
+nohup octave --no-gui --traditional binfeats.m
 
 perl format_svm_seg.pl Segmentation_labeling.txt . 1
 mkdir segments
